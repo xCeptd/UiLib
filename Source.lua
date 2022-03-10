@@ -137,13 +137,25 @@ function Luxt1.CreateWindow(libName, logoId)
     sideCover.Position = UDim2.new(0.909677446, 0, 0, 0)
     sideCover.Size = UDim2.new(0, 14, 0, 452)
 
+    local fuckinglogothing = game.Players.LocalPlayer
+
+
+
+local usid = fuckinglogothing.UserId
+
+local thumbType = Enum.ThumbnailType.AvatarBust
+
+local thumbSize = Enum.ThumbnailSize.Size420x420
+
+local content, isReady = game.Players:GetUserThumbnailAsync(usid, thumbType, thumbSize)
+    
     hubLogo.Name = "hubLogo"
     hubLogo.Parent = sideHeading
     hubLogo.BackgroundColor3 = Color3.fromRGB(153, 255, 238)
     hubLogo.Position = UDim2.new(0.0567928664, 0, 0.0243411884, 0)
     hubLogo.Size = UDim2.new(0, 30, 0, 30)
     hubLogo.ZIndex = 2
-    hubLogo.Image = "rbxassetid://"..logoId
+    hubLogo.Image = content
 
     MainCorner_2.CornerRadius = UDim.new(0, 999)
     MainCorner_2.Name = "MainCorner"
