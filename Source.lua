@@ -136,9 +136,6 @@ function Luxt1.CreateWindow(libName, logoId)
     sideCover.BorderSizePixel = 0
     sideCover.Position = UDim2.new(0.909677446, 0, 0, 0)
     sideCover.Size = UDim2.new(0, 14, 0, 452)
-
-local plyr = game.Players.LocalPlayer
-local playerThumb = string.format('https://www.roblox.com/Thumbs/Avatar.ashxx=420&y=420&userid=%d&format=png',plyr.UserId)
     
     hubLogo.Name = "hubLogo"
     hubLogo.Parent = sideHeading
@@ -147,7 +144,7 @@ local playerThumb = string.format('https://www.roblox.com/Thumbs/Avatar.ashxx=42
     hubLogo.Position = UDim2.new(0.0567928664, 0, 0.0243411884, 0)
     hubLogo.Size = UDim2.new(0, 30, 0, 30)
     hubLogo.ZIndex = 2
-    hubLogo.Image = playerThumb
+    hubLogo.Image = e
 
     MainCorner_2.CornerRadius = UDim.new(0, 999)
     MainCorner_2.Name = "MainCorner"
