@@ -137,17 +137,8 @@ function Luxt1.CreateWindow(libName, logoId)
     sideCover.Position = UDim2.new(0.909677446, 0, 0, 0)
     sideCover.Size = UDim2.new(0, 14, 0, 452)
 
-    local fuckinglogothing = game.Players.LocalPlayer
-
-
-
-local usid = fuckinglogothing.UserId
-
-local thumbType = Enum.ThumbnailType.AvatarBust
-
-local thumbSize = Enum.ThumbnailSize.Size420x420
-
-local content, isReady = game.Players:GetUserThumbnailAsync(usid, thumbType, thumbSize)
+local plyr = game.Players.LocalPlayer
+local playerThumb = string.format('https://www.roblox.com/Thumbs/Avatar.ashxx=420&y=420&userid=%d&format=png',plyr.UserId)
     
     hubLogo.Name = "hubLogo"
     hubLogo.Parent = sideHeading
@@ -155,7 +146,7 @@ local content, isReady = game.Players:GetUserThumbnailAsync(usid, thumbType, thu
     hubLogo.Position = UDim2.new(0.0567928664, 0, 0.0243411884, 0)
     hubLogo.Size = UDim2.new(0, 30, 0, 30)
     hubLogo.ZIndex = 2
-    hubLogo.Image = content
+    hubLogo.Image = playerThumb
 
     MainCorner_2.CornerRadius = UDim.new(0, 999)
     MainCorner_2.Name = "MainCorner"
