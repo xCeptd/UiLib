@@ -140,10 +140,10 @@ function Luxt1.CreateWindow(libName, logoId)
     hubLogo.Name = "hubLogo"
     hubLogo.Parent = sideHeading
     hubLogo.BackgroundColor3 = Color3.fromRGB(153, 255, 238)
-    hubLogo.BackgroundTransparency = 0
+    hubLogo.BackgroundTransparency = 1
     hubLogo.Position = UDim2.new(0.0567928664, 0, 0.0243411884, 0)
     hubLogo.Size = UDim2.new(0, 30, 0, 30)
-    hubLogo.ZIndex = 2
+    hubLogo.ZIndex = 555
     hubLogo.Image = string.format('https://www.roblox.com/Thumbs/Avatar.ashx?x=420&y=420&userid=%d&format=png', game.Players.LocalPlayer.UserId)
 
     MainCorner_2.CornerRadius = UDim.new(0, 999)
