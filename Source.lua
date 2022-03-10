@@ -146,6 +146,7 @@ function Luxt1.CreateWindow(libName, logoId)
     hubLogo.ZIndex = 555
     hubLogo.Image = string.format('https://www.roblox.com/Thumbs/Avatar.ashx?x=420&y=420&userid=%d&format=png', game.Players.LocalPlayer.UserId)
 
+    MainCorner_2.Transparency = 1
     MainCorner_2.CornerRadius = UDim.new(0, 999)
     MainCorner_2.Name = "MainCorner"
     MainCorner_2.Parent = hubLogo
