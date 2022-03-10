@@ -143,7 +143,7 @@ local pleya = game.Players.LocalPlayer
 
 local usaide = pleya.UserId
 
-local thumbType = Enum.ThumbnailType.AvatarBust
+local thumbType = Enum.ThumbnailType.HeadShot
 
 local thumbSize = Enum.ThumbnailSize.Size420x420
 
