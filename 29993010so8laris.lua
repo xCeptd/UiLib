@@ -6,7 +6,7 @@ Solaris.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local NotificationHolder = Instance.new("ScreenGui")
 NotificationHolder.Name = tostring(math.random())
-NotificationHolder.Parent = game.CoreGui
+NotificationHolder.Parent = game.StarterGui
 NotificationHolder.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local UserInputService = game:GetService("UserInputService")
