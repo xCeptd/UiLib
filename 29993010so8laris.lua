@@ -1,7 +1,7 @@
 -- This User Interface Library is brought to you by Solaris Software.
 local Solaris = Instance.new("ScreenGui")
 Solaris.Name = tostring(math.random())
-Solaris.Parent = game.CoreGui
+Solaris.Parent = game.StarterGui
 Solaris.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local NotificationHolder = Instance.new("ScreenGui")
@@ -31,7 +31,8 @@ end
 
 local NotificationFrame = game:GetObjects("rbxassetid://6924028278")[1]
 NotificationFrame.ZIndex = 4
-NotificationFrame.Parent = NotificationHolder
+NotificationFrame.
+= NotificationHolder
 script = NotificationFrame.NotifScript
 local Notify = loadstring(NotificationFrame.NotifScript.Source)()
 script = oldScript
