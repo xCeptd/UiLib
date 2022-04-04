@@ -214,7 +214,7 @@ do
 	function library.new(title)
 		local container = utility:Create("ScreenGui", {
 			Name = title,
-			Parent = game.ScreenGui
+			Parent = game.StarterGui
 		}, {
 			utility:Create("ImageLabel", {
 				Name = "Main",
@@ -1497,7 +1497,7 @@ do
 				-- update size and position
 				wait(0.2)
 				tab.ClipsDescendants = false
-				
+				Pa
 				canvasSize, canvasPosition = canvas.AbsoluteSize, canvas.AbsolutePosition
 				colorSize, colorPosition = color.AbsoluteSize, color.AbsolutePosition
 			else
