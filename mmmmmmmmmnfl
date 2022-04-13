@@ -1,3 +1,5 @@
+-- Created : When it was released
+
 do
     local Console = game:GetService("CoreGui"):FindFirstChild("STX_Console")
     if Console then
