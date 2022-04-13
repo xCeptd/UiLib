@@ -1,11 +1,3 @@
---https://pastebinp.com/raw/EFRype0R
--- Developed by Team STK
--- Created : 4/10/2022, 12:21 AM
---[[
-    Developers = {
-        ["Owner"] + ["Scripter"] + ["Designer"] = "Luke" or Discord : "Luke Marcus#4347"
-    }
-]]
 
 do
     local Console = game:GetService("CoreGui"):FindFirstChild("STX_Console")
@@ -52,7 +44,7 @@ function Console:Window(consoledebugger)
     ambientShadow.BackgroundTransparency = 1.000
     ambientShadow.BorderSizePixel = 0
     ambientShadow.Position = GuiPosition
-    ambientShadow.Size = UDim2.new(0, 610, 0, 510)
+    ambientShadow.Size = UDim2.new(0, 510, 0, 410)
     ambientShadow.Image = "rbxassetid://1316045217"
     ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
     ambientShadow.ImageTransparency = 0.400
@@ -118,7 +110,7 @@ function Console:Window(consoledebugger)
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
     Window.Position = UDim2.new(0, 5, 0, 5)
-    Window.Size = UDim2.new(0, 500, 0, 400)
+    Window.Size = UDim2.new(0, 400, 0, 300)
     Window.ZIndex = 2
     
     Outline_A.Name = "Outline_A"
@@ -126,7 +118,7 @@ function Console:Window(consoledebugger)
     Outline_A.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
     Outline_A.BorderSizePixel = 0
     Outline_A.Position = UDim2.new(0, 0, 0, 40)
-    Outline_A.Size = UDim2.new(0, 500, 0, 1)
+    Outline_A.Size = UDim2.new(0, 400, 0, 0)
     Outline_A.ZIndex = 5
     
     ConsoleContainer.Name = "ConsoleContainer"
@@ -136,7 +128,7 @@ function Console:Window(consoledebugger)
     ConsoleContainer.BackgroundTransparency = 1.000
     ConsoleContainer.BorderSizePixel = 0
     ConsoleContainer.Position = UDim2.new(0, 10, 0, 50)
-    ConsoleContainer.Size = UDim2.new(0, 480, 0, 340)
+    ConsoleContainer.Size = UDim2.new(0, 380, 0, 240)
     ConsoleContainer.ZIndex = 3
     ConsoleContainer.BottomImage = ""
     ConsoleContainer.CanvasSize = UDim2.new(0, 0, 0, 0)
@@ -155,7 +147,7 @@ function Console:Window(consoledebugger)
     WindowTitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WindowTitle.BorderSizePixel = 0
     WindowTitle.Position = UDim2.new(0, 14, 0, 2)
-    WindowTitle.Size = UDim2.new(0, 223, 0, 30)
+    WindowTitle.Size = UDim2.new(0, 123, 0, 20)
     WindowTitle.ZIndex = 4
     WindowTitle.Font = Enum.Font.GothamSemibold
     WindowTitle.Text = Title
@@ -167,7 +159,7 @@ function Console:Window(consoledebugger)
     AutoScroll_Locked.Parent = Window
     AutoScroll_Locked.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
     AutoScroll_Locked.Position = UDim2.new(0, 474, 0, 11)
-    AutoScroll_Locked.Size = UDim2.new(0, 22, 0, 10)
+    AutoScroll_Locked.Size = UDim2.new(0, 12, 0, 0)
     AutoScroll_Locked.ZIndex = 3
     
     AutoScroll_LockedUICorner.CornerRadius = UDim.new(0, 1000)
@@ -179,7 +171,7 @@ function Console:Window(consoledebugger)
     AutoScroll_Locked_Inner.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
     AutoScroll_Locked_Inner.BorderSizePixel = 0
     AutoScroll_Locked_Inner.Position = UDim2.new(0, 2, 0, 2)
-    AutoScroll_Locked_Inner.Size = UDim2.new(0, 6, 0, 6)
+    AutoScroll_Locked_Inner.Size = UDim2.new(0, 5, 0, 5)
     AutoScroll_Locked_Inner.ZIndex = 4
     
     AutoScroll_Locked_InnerUICorner.CornerRadius = UDim.new(0, 1000)
@@ -193,7 +185,7 @@ function Console:Window(consoledebugger)
     AutoScroll_Locked_Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
     AutoScroll_Locked_Title.BorderSizePixel = 0
     AutoScroll_Locked_Title.Position = UDim2.new(0, 394, 0, 14)
-    AutoScroll_Locked_Title.Size = UDim2.new(0, 70, 0, 4)
+    AutoScroll_Locked_Title.Size = UDim2.new(0, 60, 0, 3)
     AutoScroll_Locked_Title.ZIndex = 4
     AutoScroll_Locked_Title.Font = Enum.Font.GothamSemibold
     AutoScroll_Locked_Title.Text = "Autoscroll"
@@ -208,7 +200,7 @@ function Console:Window(consoledebugger)
     AutoScroll_Locked_Title_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
     AutoScroll_Locked_Title_2.BorderSizePixel = 0
     AutoScroll_Locked_Title_2.Position = UDim2.new(0, 520, 0, 14)
-    AutoScroll_Locked_Title_2.Size = UDim2.new(0, 70, 0, 4)
+    AutoScroll_Locked_Title_2.Size = UDim2.new(0, 60, 0, 3)
     AutoScroll_Locked_Title_2.ZIndex = 4
     AutoScroll_Locked_Title_2.Font = Enum.Font.GothamSemibold
     AutoScroll_Locked_Title_2.Text = "[RightAlt]"
@@ -253,7 +245,7 @@ function Console:Window(consoledebugger)
         TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         TextLabel.BackgroundTransparency = 1.000
         TextLabel.BorderSizePixel = 0
-        TextLabel.Size = UDim2.new(0, 380, 0, 2)
+        TextLabel.Size = UDim2.new(0, 280, 0, 1)
         TextLabel.ZIndex = 4
         TextLabel.Font = Enum.Font.Code
         TextLabel.Text = "Nil"
